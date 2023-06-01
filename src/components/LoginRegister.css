@@ -1,0 +1,106 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form {
+    height: auto;
+    width: 400px;
+    display: flex;
+    padding-bottom: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+  }
+  
+  .buttons {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50px;
+    float: left;
+  }
+  
+  .buttons .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    width: 50%;
+    cursor: pointer;
+  }
+  
+  #chbox:checked~.SignUp_form {
+    display: flex;
+  }
+  
+  #chbox:checked~.login_form {
+    display: none;
+  }
+  
+  #chbox:checked+.layer {
+    left: 50%;
+  }
+  
+  #chbox:checked~.layer2 {
+    left: 50%;
+  }
+  
+  #chbox {
+    display: none;
+  }
+  
+  .layer {
+    content: '';
+    height: 50px;
+    width: 50%;
+    background-color: transparent;
+    float: right;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  
+  .layer2 {
+    content: '';
+    height: 50px;
+    z-index: -1;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    float: right;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 15px;
+  }
+  
+  .form .login_form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form .login_form input {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding: 5px;
+  }
+  
+  .form .SignUp_form {
+    display: none;
+    flex-direction: column;
+  }
+  
+  .form .SignUp_form input {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding: 5px;
+    margin: 0px;
+  }
