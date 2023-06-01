@@ -235,3 +235,25 @@ img {
     max-width: 100%;
   }
 }
+
+.b-danger{
+  height: 40px;
+}
+
+.b-profile{
+  height: 40px;
+  margin-left: 10px;
+}
+
+.t-profile{
+  color: yellow;
+  font-weight: bold;
+}
+
+.f-profile{
+  margin-top: 70px;
+  padding: 30px;
+  background-color: rgba(145, 132, 48, 0.108);
+  border-radius: 10%;
+  box-shadow: 0 0 6px 0 yellow;
+}
